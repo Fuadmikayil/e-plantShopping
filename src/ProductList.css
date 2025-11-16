@@ -250,3 +250,71 @@ body {
         text-align: center; /* Align text to the center */
       }
   }
+  .product-grid {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.plant-card {
+  width: 280px;
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  transition: 0.3s;
+  border: 1px solid #e6e6e6;
+}
+
+.plant-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.plant-card img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.plant-card h3 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+}
+
+.plant-card p {
+  color: #555;
+  font-size: 14px;
+}
+
+.plant-card button {
+  margin-top: 15px;
+  background: #555;
+  color: white;
+  padding: 9px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.plant-card button[disabled] {
+  background: #b3b3b3;
+  cursor: not-allowed;
+}
+
+.sale-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #e74c3c;
+  color: white;
+  padding: 3px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
